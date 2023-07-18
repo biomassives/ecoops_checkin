@@ -10,8 +10,8 @@ function App() {
   return (
     <BrowserRouter>
       <nav>
-        <h1>Eco Ops Checkin Page</h1>
-        <i> Karibu! </i>
+        <h1>Eco Ops Checkin/Login</h1>
+        <i>welcome</i>
         <Link to="/">Home</Link>
         <Link to="/create">Log a useful item</Link>
       </nav>
