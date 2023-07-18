@@ -1,10 +1,12 @@
-# Getting Started with Create React App
+# Eco Ops Participation and Project Update Page
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+ecoops_favicon.ico
 
 ### `npm start`
 
