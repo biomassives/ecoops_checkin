@@ -45,6 +45,7 @@ const Home = () => {
             <p>Order by:</p>
             <button onClick={() => setOrderBy('created_at')}>Time Created</button>
             <button onClick={() => setOrderBy('title')}>Title</button>
+            <button onClick={() => setOrderBy('tag')}>Tag</button>
             <button onClick={() => setOrderBy('location')}>Location</button>
             <button onClick={() => setOrderBy('rating')}>Usefulness</button>
           </div>
