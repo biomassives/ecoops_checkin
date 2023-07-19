@@ -46,7 +46,7 @@ const Home = () => {
             <button onClick={() => setOrderBy('created_at')}>Time Created</button>
             <button onClick={() => setOrderBy('title')}>Title</button>
             <button onClick={() => setOrderBy('location')}>Location</button>
-            <button onClick={() => setOrderBy('rating')}>Rating</button>
+            <button onClick={() => setOrderBy('rating')}>Usefulness</button>
           </div>
           <div className="smoothie-grid">
             {smoothies.map(smoothie => (
