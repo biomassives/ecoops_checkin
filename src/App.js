@@ -10,6 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <nav>
+        <img src="/ecoops.avif" align="left" />
         <h1>Eco Ops Checkin/Login</h1>
         <i>welcome</i>
         <Link to="/">Home</Link>
