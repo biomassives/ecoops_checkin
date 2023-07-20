@@ -9,7 +9,9 @@ const Update = () => {
   const [title, setTitle] = useState('')
   const [method, setMethod] = useState('')
   const [location, setLocation] = useState('')
+  const [tag, setTag] = useState('')
   const [rating, setRating] = useState('')
+  const [poststatus, setPoststatus] = useState('')
   const [formError, setFormError] = useState(null)
 
   const handleSubmit = async (e) => {
@@ -22,7 +24,7 @@ const Update = () => {
 
     const { data, error } = await supabase
       .from('smoothies')
-      .update({ title, method, location, rating })
+      .update({ title, method, location, tag, rating })
       .eq('id', id)
 
     if (error) {
@@ -50,6 +52,7 @@ const Update = () => {
         setTitle(data.title)
         setMethod(data.method)
         setLocation(data.location)
+        setTag(data.tag)
         setRating(data.rating)
       }
     }
@@ -75,11 +78,19 @@ const Update = () => {
           onChange={(e) => setMethod(e.target.value)}
         />
 
-        <label htmlFor="method">Location:</label>
+        <label htmlFor="location">Location:</label>
         <textarea 
           id="location"
           value={location}
-          onChange={(e) => setMethod(e.target.value)}
+          onChange={(e) => setLocation(e.target.value)}
+        />
+
+        <label htmlFor="method">Tag(s):</label>
+        <input 
+          type="text"
+          id="tag"
+          value={tag}
+          onChange={(e) => setTag(e.target.value)}
         />
 
         <label htmlFor="rating">Usefulness:</label>
@@ -90,7 +101,16 @@ const Update = () => {
           onChange={(e) => setRating(e.target.value)}
         />
 
-        <button>Update Smoothie Recipe</button>
+
+        <label htmlFor="poststatus">Usefulness:</label>
+        <input 
+          type="number"
+          id="poststatus"
+          value={poststatus}
+          onChange={(e) => setPoststatus(e.target.value)}
+        />
+
+        <button>Update Checkin</button>
 
         {formError && <p className="error">{formError}</p>}
       </form>

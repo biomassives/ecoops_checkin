@@ -2,7 +2,7 @@
 
 :root {
   --primary: #01888f;
-  --terciary: #027d07;
+  --terciary: #979797;
   --secondary: #f14f04;
   --quarternary: #ba0615;
 }
@@ -84,6 +84,11 @@ form {
   margin: 0 auto;
   border-radius: 6px;
 }
+#comment {
+  height:223pt;
+  width:300pt;
+
+}
 form input, form textarea {
   display: block;
   width: 100%;
@@ -95,7 +100,7 @@ form input, form textarea {
 form button {
   background: var(--primary);
   color: #fff;
-  border: 0;
+  border: 0px;
   border-radius: 6px;
   padding: 6px 8px;
   font-family: "Poppins";
@@ -105,11 +110,82 @@ form button {
 /* order-by buttons */
 .order-by button {
   margin-right: 10px;
-  background: var(--primary);
-  color: #fff;
-  border: 0;
+  background: #ffffff;
+  color: #000000;
+  border: 0px;
   padding: 4px 8px;
   border-radius: 6px;
   font-family: "Poppins";
   cursor: pointer;
+}
+
+/* order-by buttons */
+.order-by button:hover {
+  margin-right: 10px;
+  background: #8a8a89;
+  color: #ffffff;
+  border: 3px;
+  border-color: rgba(124, 119, 104, 0.2);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+
+/* order-by buttons */
+.disciplines button {
+  margin-right: 10px;
+  background: var(--quaternary);
+  color: #196a53;
+  border-color: #196a53;
+  border: 1px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+.disciplines button:hover {
+  margin-right: 10px;
+  background: rgb(205, 112, 18);
+  color: #e0ece9;
+  border-color: #196a53;
+  border: 1px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+/* order-by buttons */
+.ecoregions button {
+  margin-right: 10px;
+  background: var(--quaternary);
+  color: #196a53;
+  border-color: #196a53;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+/* order-by buttons */
+.ecoregions button:hover {
+  margin-right: 10px;
+  background: #ab8600;
+  color: #ffffff;
+  border: 1px;
+  border-color: #01888f;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+
+.jumbo {
+  align-content: center;
+  text-align: center;
+  background: #ab8600;
+
 }
