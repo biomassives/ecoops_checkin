@@ -20,7 +20,7 @@ const SmoothieCard = ({ smoothie, onDelete }) => {
 
   return (
     <div className="smoothie-card">
-      <h3>{smoothie.title}</h3>
+      <h3>{smoothie.title} {smoothie.tag} </h3>
       <p>{smoothie.method}</p>
       <p>{smoothie.location}</p>
       <div className="rating">{smoothie.rating}</div>
@@ -30,6 +30,7 @@ const SmoothieCard = ({ smoothie, onDelete }) => {
         </Link>
         <i className="material-icons" onClick={handleDelete}>delete</i>
       </div>
+      
     </div>
   )
 }
