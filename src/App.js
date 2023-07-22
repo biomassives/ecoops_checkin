@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-import supabase  from "./config/supabaseClient"
-import Auth from "./Auth"
+import { useEffect } from "react"
 
 
 //import { getCurrentBrowserFingerPrint } from "@rajesh896/broprint.js";
@@ -39,28 +38,19 @@ import Stoves from "./pages/learn/Stoves"
 
 
 function App() {
-
-
-
-
-
-
   return (
 
     <BrowserRouter>
-
       <nav>
-        <img src="/ecoops.avif" align="left" alt="Eco Ops App - biodiversity 2023" />
+        <img src="/ecoopsd.avif" align="left" alt="Eco Ops App - biodiversity 2023" />
    
         <Link to="/">Home</Link>
-        <Link to="/auth">Auth</Link>
         <Link to="/about">How to use Eco Ops</Link>
         <Link to="/create">Post a checkin</Link>
       </nav>
       <h2 className="jumbo"> 	🙞  Eco Ops 🙜  </h2>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/auth" element={<Auth />} />
         <Route path="/create" element={<Create />} />
         <Route path="/about" element={<About />} />
         <Route path="/:id" element={<Update />} />
